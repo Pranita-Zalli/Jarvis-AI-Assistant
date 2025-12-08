@@ -13,3 +13,6 @@ A voice-controlled personal assistant built in Python.
 ## Setup
 1. Create a virtual environment (`.venv`)
 2. Install dependencies:
+3. Add your API keys to `.env`:
+
+## Run the project
