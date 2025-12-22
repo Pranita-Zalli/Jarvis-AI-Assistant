@@ -1,97 +1,123 @@
-🧠 Jarvis AI Assistant – Voice Controlled Desktop Assistant (Python)
+🎙️🧠 GemVoice – An AI-Powered Voice Assistant using Google Gemini
 
-A smart AI-powered voice assistant built using Python, capable of performing tasks like opening websites, playing songs, reading news, and answering general knowledge questions using Gemini API — all through your voice commands.
+GemVoice is a voice-controlled desktop assistant built using Python and powered by Google Gemini AI. It enables hands-free interaction by understanding spoken commands, performing automation tasks, retrieving real-time information, and generating intelligent conversational responses.
 
-✨ Overview
+The assistant runs locally and communicates entirely through voice for a smooth and intuitive user experience.
 
-Jarvis AI Assistant is a Python-based voice command application that works similar to Alexa.
-It listens to your voice, processes your requests, and responds using text-to-speech.
-It also includes smart features like news reading, music playback, and AI conversational abilities.
+---
 
-This project demonstrates strong skills in Python, APIs, automation, AI integration, and speech processing.
+🔍 Overview
 
-🚀 Features
-🔊 Voice Recognition
-Activates when you say “Jarvis”
-Responds with: “Yaa”
+GemVoice functions as a smart personal assistant designed for desktop environments. It listens for voice commands, analyzes user intent using Python logic and AI models, and responds through natural-sounding speech.
+
+The project combines voice recognition, AI-driven reasoning, and system automation into a single modular application.
+
+---
+
+🚀Features
+
+🔊 Voice Activation
+- Activated using the keyword “Jarvis”
+- Confirms activation with “Yaa”
+- Continuously listens for commands
 
 🌐 Website Automation
-Commands like:
-“open google”
-“open youtube”
-“open facebook”
-“open linkedin”
+Supports commands such as:
+- `open google`
+- `open youtube`
+- `open facebook`
+- `open linkedin`
 
-Jarvis opens the website instantly.
+Opens the requested website instantly in the default browser.
 
-🎵 Music Library
-Custom music library created using Python dict datatpe
-Example:
-“Play Bulleya” → plays music on YouTube
+🎵 Music Playback
+- Custom music library implemented using Python dictionary
+- Example:
+  - `play bulleya` → opens the song on YouTube
 
-📰 News Reader (NewsAPI)
-“Tell me news” → Reads top headlines
-“Stop” → Stops reading immediately
+📰 News Reading
+- Fetches top headlines using News API
+- Reads news aloud on command
+- `stop` → stops speech immediately
 
-🤖 AI Conversational Mode (Gemini API)
-Ask anything:
-“What is coding?”
-“Explain programming.”
-“Tell me about Python.”
+🌦 Weather Information
+- Command: `tell me weather`
+- Prompts for city name
+- If recognized → provides city-specific weather
+- If not recognized → defaults to current location and announces:  
+  “Speech not recognized. Using current location.”
 
-Jarvis responds with accurate AI-generated information.
-You can say “stop” anytime to stop the speech.
+⏰ Alarm / Clock Access
+- Command: `open alarm`
+- Opens the system clock or alarm application
 
-👋 Exit Command
+💬 WhatsApp Automation
+- Command: `open whatsapp`
+- Requests phone number via voice
+- Opens WhatsApp chat with the specified number
+- If number is not recognized → asks for manual input
 
-“Bye” → Jarvis replies:
-“Okay, bye. Have a great day!”
+🤖 AI Conversational Mode
+- Handles general questions using **Google Gemini AI**
+- Example queries:
+  - `what is coding`
+  - `explain programming`
+  - `tell me about python`
+- Responses are generated contextually and spoken aloud
+- `stop` → interrupts speech output
 
-🛠️ Tech Stack
-Python
-SpeechRecognition
-PyAudio
-pyttsx3
-webbrowser
-Requests (for APIs)
-Google Gemini API
-News API
+ 👋 Exit Command
+- `bye` → confirms and exits the assistant gracefully
 
-🔧 How It Works
-Jarvis AI works in a simple, modular flow:
+---
 
-1️⃣ Voice Input
-Listens using microphone & SpeechRecognition library
-Activates when hearing “Jarvis” and sayes "Yaa"
+🛠️ Technology Stack
+
+- Python  
+- SpeechRecognition  
+- PyAudio  
+- pyttsx3 (Text-to-Speech)  
+- webbrowser  
+- Requests  
+- Google Gemini API  
+- News API  
+- Weather API  
+
+---
+
+🔧 System Workflow
+
+1️⃣ Voice Input 🎤  
+   Captured using microphone and SpeechRecognition.
 
 2️⃣ Speech-to-Text
-Your speech is converted into text by STT engine
+   Converts spoken input into text.
 
-3️⃣ Command Processing
-The text command is analyzed in Python.
-Examples:
-"open google" → opens Google
-"play bulleya" → plays YouTube music
-"tell me news" → fetches headlines
-"what is coding" → calls Gemini API
+3️⃣ Command Processing 
+   Determines whether the request is automation, API-based, or AI-driven.
 
-4️⃣ API Integration
-News API → fetch latest headlines
-Gemini API → generate intelligent responses
+4️⃣ API & AI Handling
+   - News and weather fetched via APIs  
+   - Intelligent responses generated using Google Gemini
 
-5️⃣ Perform Action
-Executes task: open browser, play song, read news, answer Q&A.
+5️⃣ Action Execution
+   Performs system tasks or responds with speech.
 
-6️⃣ Text-to-Speech Output
-Uses pyttsx3 to speak responses back to the user.
+6️⃣ Text-to-Speech Output 🔊  
+   Converts responses into voice using pyttsx3.
 
-7️⃣ Stop/Exit
-"stop" → stops speaking
-"bye" → exits assistant
+---
 
-🚀 Future Enhancements
-  1. Weather Reporting: Using Weather API.
-  2. Alarm & Reminder System: Set alarms with voice.
-  3. WhatsApp & Email Automation: Send messages or emails using voice.
-  4. GUI Desktop Version: A graphical interface for Jarvis.
-  5. Task Scheduling: Manage events & reminders.
+▶️ Running the Application
+
+1. Clone the repository  
+2. Install required Python dependencies  
+3. Configure API keys in a `.env` file  
+4. Run the main Python script  
+5. Interact using voice commands  
+
+---
+
+✅ Summary
+
+GemVoice is a fully functional AI-powered voice assistant that integrates speech recognition, desktop automation, and Google Gemini AI to deliver an intelligent and hands-free user experience.
