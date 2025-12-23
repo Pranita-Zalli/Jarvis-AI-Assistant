@@ -1,6 +1,8 @@
 🎙️ **GemVoice AI – Intelligent Voice Assistant**
 
-▶️ **[Experience GemVoice AI in Action 🚀](https://drive.google.com/file/d/1wasBdTYn5Ss-pPvBbqr_DZ6AGxH4EeJd/view?usp=drivesdk)**
+🔗 MVP – Experience GemVoice AI Live
+- **GitHub Repository (Working Project):** [Explore the Code & Run Your Own Assistant](https://github.com/Pranita-Zalli/GemVoice-AI-Intelligent-Voice-Assistant)
+- **3-Minute Demo Video:** [See GemVoice AI in Action 🚀](https://drive.google.com/file/d/1wasBdTYn5Ss-pPvBbqr_DZ6AGxH4EeJd/view?usp=drivesdk)
 
 ---
 
@@ -11,36 +13,81 @@ for weather updates, news retrieval, and system-level automation.
 
 ---
 
-✨ Key Features
+🚀Key Features
 
-🎤 Voice command recognition and text-to-speech
-🤖 AI-powered responses using Google Gemini API
-🌦 Real-time weather updates via WeatherStack API
-📰 Live news reading with voice interruption support
-💬 Open WhatsApp chats using voice commands
-⏰ Alarm / clock access and desktop automation
-🌐 Open websites like Google, YouTube, LinkedIn, etc.
+🔊 Voice Activation
+- Activated using the keyword “Jarvis”
+- Confirms activation with “Yaa”
+- Continuously listens for commands
+
+🌐 Website Automation
+Supports commands such as:
+- `open google`
+- `open youtube`
+- `open facebook`
+- `open linkedin`
+
+Opens the requested website instantly in the default browser.
+
+🎵 Music Playback
+- Custom music library implemented using Python dictionary
+- Example:
+  - `play bulleya` → opens the song on YouTube
+
+📰 News Reading
+- Fetches top headlines using News API
+- Reads news aloud on command
+- `stop` → stops speech immediately
+
+🌦 Weather Information
+- Command: `tell me weather`
+- Prompts for city name
+- If recognized → provides city-specific weather
+- If not recognized → defaults to current location and announces:  
+  “Speech not recognized. Using current location.”
+
+⏰ Alarm / Clock Access
+- Command: `open alarm`
+- Opens the system clock or alarm application
+
+💬 WhatsApp Automation
+- Command: `open whatsapp`
+- Requests phone number via voice
+- Opens WhatsApp chat with the specified number
+- If number is not recognized → asks for manual input
+
+🤖 AI Conversational Mode
+- Handles general questions using **Google Gemini AI**
+- Example queries:
+  - `what is coding`
+  - `explain programming`
+  - `tell me about python`
+- Responses are generated contextually and spoken aloud
+- `stop` → interrupts speech output
+
+ 👋 Exit Command
+- `bye` → confirms and exits the assistant gracefully
 
 ---
 
 🛠 Technology Stack
 
-Python
-SpeechRecognition
-PyAudio
-pyttsx3
-Requests
-OS & Web Automation
-WeatherStack API - real time weather data
-News API - Latest news headlines
+- Python  
+- SpeechRecognition  
+- PyAudio  
+- pyttsx3 (Text-to-Speech)  
+- webbrowser  
+- Requests   
+- WeatherStack API - real time weather data
+- News API - Latest news headlines
 
 ---
 
 🟢 Google Technologies Used (Mandatory)
-Google Gemini API (Generative Language API)
+- Google Gemini API (Generative Language API)
 
 🤖 Google AI Tools Integrated
-Gemini AI (gemini-2.5-flash) – for generating intelligent, context-aware responses to user queries
+- Gemini AI (gemini-2.5-flash) – for generating intelligent, context-aware responses to user queries
 
 ---
 
@@ -53,15 +100,16 @@ GemVoice AI is a Python-based intelligent voice assistant that uses Google Gemin
 🚀 Installation & Setup
 
 1️⃣ Clone the repository
-git clone https://github.com/Pranita-Zalli/GemVoice-AI-Intelligent-Voice-Assistant.git
-cd GemVoice-AI-Intelligent-Voice-Assistant
+    git clone https://github.com/Pranita-Zalli/GemVoice-AI-Intelligent-Voice-Assistant.git
+    cd GemVoice-AI-Intelligent-Voice-Assistant
 2️⃣ Install dependencies
-pip install -r requirements.txt
+    pip install -r requirements.txt
 3️⃣ Configure Environment Variables
 
 ---
 
 Create a .env file and add:
+
 GEMINI_API_KEY=your_gemini_api_key
 WEATHERSTACK_API_KEY=your_weatherstack_api_key
 news_api=your_news_api_key
@@ -74,34 +122,33 @@ python main.py
 
 ---
 
-🎤 Usage
+🔧 Voice Assistant Workflow
 
-Run the program
-Say “Jarvis” to activate
-Try commands like:
-“Tell me the weather”
-“Open WhatsApp chat”
-“Tell me the news”
-“Open Google”
-“Explain artificial intelligence”
-“Open alarm”
-Say “stop” anytime to interrupt responses.
+1️⃣ Voice Input 🎤  
+   Captured using microphone and SpeechRecognition.
 
----
+2️⃣ Speech-to-Text
+   Converts spoken input into text.
 
-🎥 Demo
-▶️ **[Experience GemVoice AI in Action 🚀](https://drive.google.com/file/d/1wasBdTYn5Ss-pPvBbqr_DZ6AGxH4EeJd/view?usp=drivesdk)**
+3️⃣ Command Processing 
+   Determines whether the request is automation, API-based, or AI-driven.
+
+4️⃣ API & AI Handling
+   - News and weather fetched via APIs  
+   - Intelligent responses generated using Google Gemini
+
+5️⃣ Action Execution
+   Performs system tasks or responds with speech.
+
+6️⃣ Text-to-Speech Output 🔊  
+   Converts responses into voice using pyttsx3.
 
 ---
 
 📌 Project Highlights
-Practical implementation of AI + voice systems
-Real-world API integration
-Modular and extensible project structure
-Focus on usability and automation
+- Practical implementation of AI + voice systems
+- Real-world API integration
+- Modular and extensible project structure
+- Focus on usability and automation
 
 ---
-
-🙌 Acknowledgements
-Inspired by foundational learning from Code With Harry, with significant enhancements and feature extensions implemented independently. 
-AI-powered voice assistant that integrates speech recognition, desktop automation, and Google Gemini AI to deliver an intelligent and hands-free user experience.
