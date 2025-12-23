@@ -101,19 +101,23 @@ GemVoice AI is a Python-based intelligent voice assistant that uses Google Gemin
 🚀 Installation & Setup
 
 1️⃣ Clone the repository
+
     git clone https://github.com/Pranita-Zalli/GemVoice-AI-Intelligent-Voice-Assistant.git
     cd GemVoice-AI-Intelligent-Voice-Assistant
+    
 2️⃣ Install dependencies
+
     pip install -r requirements.txt
+    
 3️⃣ Configure Environment Variables
 
 ---
 
 Create a .env file and add:
 
-GEMINI_API_KEY=your_gemini_api_key
-WEATHERSTACK_API_KEY=your_weatherstack_api_key
-news_api=your_news_api_key
+- GEMINI_API_KEY=your_gemini_api_key
+- WEATHERSTACK_API_KEY=your_weatherstack_api_key
+- news_api=your_news_api_key
 
 ---
 
