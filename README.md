@@ -1,3 +1,10 @@
+## 🎥 Demo Video
+
+Watch a short demo of **GemVoice AI**, showcasing:
+👉 **[Watch Demo Video](https://drive.google.com/file/d/1wasBdTYn5Ss-pPvBbqr_DZ6AGxH4EeJd/view?usp=drivesdk)**
+
+---
+
 🎙️🧠 GemVoice – An AI-Powered Voice Assistant using Google Gemini
 
 GemVoice is a voice-controlled desktop assistant built using Python and powered by Google Gemini AI. It enables hands-free interaction by understanding spoken commands, performing automation tasks, retrieving real-time information, and generating intelligent conversational responses.
