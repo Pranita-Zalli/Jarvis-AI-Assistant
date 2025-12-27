@@ -91,7 +91,7 @@ Opens the requested website instantly in the default browser.
 
 ---
 
-🟢 **Google Technologies Used (Mandatory)**
+🟢 **Google Technologies Used**
 - Google Gemini API (Generative Language API)
 
 🤖 **Google AI Tools Integrated**
