@@ -6,16 +6,17 @@ import musicLibrary
 import requests
 from openai import OpenAI
 from dotenv import load_dotenv
+from config import WEATHERSTACK_API_KEY, GEMINI_API_KEY, NEWS_API_KEY
 
 
-load_dotenv()  # loads .env file
+# load_dotenv()  # loads .env file
 
-WEATHERSTACK_API_KEY = os.getenv("WEATHERSTACK_API_KEY")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-news_api_key=os.getenv("news_api")
+# WEATHERSTACK_API_KEY = os.getenv("WEATHERSTACK_API_KEY") or input("Enter WEATHERSTACK key: ")
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") or input("Enter GEMINI key: ")
+# news_api_key=os.getenv("news_api") or input("Enter News API key: ")
 
 recognizier=sr.Recognizer()
-news=news_api_key
+news=NEWS_API_KEY
 
 def speak(text):
     engine=pyttsx3.init()

@@ -2,10 +2,16 @@
 .venv/
 venv/
 
+# PyInstaller files
+build/
+dist/
+*.spec
+
 # Ignore environment variable files (secrets)
 .env
 .env.*
 *.env
+config.py
 
 # Ignore Python cache files and build artifacts
 __pycache__/
