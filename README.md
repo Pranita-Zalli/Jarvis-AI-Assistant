@@ -109,22 +109,26 @@ GemVoice AI is a Python-based intelligent voice assistant that uses Google Gemin
 
     pip install -r requirements.txt
     
-3️⃣ Configure Environment Variables
+3️⃣ Configuration
 
----
+This project uses a configuration file to manage API keys.
 
-Create a .env file and add:
+  1️⃣Copy the example file:
 
-- GEMINI_API_KEY=your_gemini_api_key
-- WEATHERSTACK_API_KEY=your_weatherstack_api_key
-- news_api=your_news_api_key
-
----
+      cp config.example.py config.py
+    
+  2️⃣Open config.py and add your API keys:
+  
+      GEMINI_API_KEY = "your_gemini_api_key"
+      WEATHERSTACK_API_KEY = "your_weatherstack_api_key"
+      NEWS_API_KEY = "your_news_api_key"
+Note: config.py is ignored in version control to keep API keys secure.
 
 4️⃣ Run the project
 
-python main.py
+    python main.py
 
+MVP: A preconfigured Windows executable is provided via a separate MVP link for evaluation.
 ---
 
 🔧 Voice Assistant Workflow
